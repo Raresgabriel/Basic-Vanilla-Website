@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <h1>Blog de Călătorii</h1>
+        <nav>
+            <ul>
+                <li><a href="pagina-principala.html">Acasă</a></li>
+                <li><a href="destinatii.html">Destinații</a></li>
+                <li class="dropdown">
+                    <a href="despre-noi.html">Despre Noi</a>
+                    <ul class="dropdown-content">
+                        <li><a href="despre-noi.html">Obiective</a></li>
+                        <li><a href="despre-noi.html">Istorie</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h3>Puteți să ne scrieți dacă aveți întrebări în legătură cu locațiile prezentate în acest blog!</h3>
+            <article>
+                <h3>Date de contact:</h3>
+                <ul>
+                    <div id="contact">
+                        <li id="telefon"><strong>Telefon:</strong> +40755936342</li>
+                        <li id="email"><strong>Email:</strong> rares.bordei11@gmail.com sau rares-gabriel.bordei@s.unibuc.ro</li>
+                    </div>
+                </ul>
+            </article>
+            <article>
+                <h3>Trimiteți-ne un mesaj:</h3>
+                <form id="message-form">
+                    <label for="message">Mesaj:</label>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                    <button type="button" id="save-message">Salvează mesajul</button>
+                </form>
+                <p id="saved-message"></p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proiect TehniciWeb realizat de Bordei Rareș - Gabriel</p>
+    </footer>
+    <script src="js.js" defer></script>
+</body>
+</html>

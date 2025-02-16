@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    color: #333; 
+}
+
+
+header {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 15px; 
+    text-align: center; 
+}
+
+nav ul {
+    display: flex; 
+    justify-content: center; 
+    list-style-type: none; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav .dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4CAF50;
+    min-width: 111px;
+    list-style-type: none;
+    padding:10px;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+} 
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    padding: 20px;
+}
+
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+nav a:hover {
+    transition: color 0.5s ease, background-color 1s ease;
+    color: #4CAF50;
+    background-color: white;
+}
+
+
+
+
+.intro ul li:nth-child(3) {
+    color: green; 
+}
+
+footer {
+    background-color: #4CAF50; 
+    color: white; 
+    text-align: center; 
+    padding: 0,9em 0; 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+nav {
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 24px; 
+    color: #4CAF50; 
+    font-weight: bold; 
+    margin-top: 20px; 
+}
+
+img {
+    transition: transform 0.3s ease; 
+}
+
+
+img:hover {
+    transform: scale(0.9); 
+}
+
+@keyframes animatie {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.intro article {
+    animation: animatie 1s ease-in-out;
+}
+
+/* update proiect */
+.destinations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.destinations h2 {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.destinations article {
+    flex: 1 1 calc(33.333% - 20px); 
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.destinations article h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .destinations {
+        flex-direction: column;
+    }
+
+    .destinations article {
+        flex: 1 1 100%;
+    }
+}
+.contact-info {
+    /* Stiluri inițiale */
+    color: black;
+}
+
+

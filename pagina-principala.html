@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principală</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <h1>Blog de Călătorii</h1>
+        <nav>
+            <ul>
+                <li><a href="pagina-principala.html">Acasă</a></li>
+                <li><a href="destinatii.html">Destinații</a></li>
+                <li class="dropdown">
+                    <a href="despre-noi.html">Despre Noi</a>
+                    <ul class="dropdown-content">
+                        <li><a href="despre-noi.html">Obiective</a></li>
+                        <li><a href="despre-noi.html">Istorie</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Bine ați venit pe blogul nostru de călătorii!</h2>
+            <p>Introduceți bugetul dvs. pentru a primi o sugestie de locație de vacanță:</p>
+            <form id="budget-form">
+                <label for="budget">Buget (EURO):</label>
+                <input type="number" id="budget" name="budget" min="0" step="100">
+                <button type="button" id="suggest-button">Sugerează locația</button>
+            </form>
+            <p id="suggestion"></p>
+        </section>
+
+        <section class="login">
+            <h3>Login</h3>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="button" id="login-button">Login</button>
+            </form>
+            <button type="button" id="logout-button" style="display:none;">Logout</button>
+            <p id="login-status"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proiect TehniciWeb realizat de Bordei Rareș - Gabriel</p>
+    </footer>
+    <script src="js.js" defer></script>
+</body>
+</html>
